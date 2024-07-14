@@ -1,0 +1,320 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.university-logo {
+  padding-left: 20px;
+}
+
+.university-logo img {
+  height: 40px; 
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bfff;
+}
+
+.hero {
+  position: relative; 
+  height: 92.7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.hero-background {
+  position: fixed; /* Fix the background image to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-background img {
+  object-fit: cover; /* Cover the entire div with the image */
+  width: 100%;
+  height: 100%;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes heroFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-left: 50px; /* Adjust padding as needed */
+  margin-left: 40%; /* Adjust margin-left as needed */
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  animation: textFadeIn 1.5s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.5em;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  animation: textFadeIn 2s ease-in-out;
+}
+
+.description {
+  padding: 20px 50px; /* Adjust padding as needed */
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-top: 100px; /* Adjust margin as needed */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: btnFadeIn 2.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #008fbf;
+  transform: scale(1.05);
+}
+
+@keyframes textFadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes btnFadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* overflow: auto; */
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: modalFadeIn 0.5s ease-in-out;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 900px; /* Adjust the max-width as needed */
+  border-radius: 10px;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Adjust to cover or contain as needed */
+}
+
+@keyframes modalFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.document-list {
+  list-style: none;
+  padding: 0;
+}
+
+.document-list li {
+  margin: 10px 0;
+}
+
+.document-list a {
+  color: #00bfff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.document-list a:hover {
+  color: #008fbf;
+}
+
+.group-members {
+  list-style: none;
+  padding: 0;
+}
+
+.group-members li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.group-members li strong {
+  font-weight: bold;
+  color: #00bfff;
+}
+
+.modal-content .document-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content .document-list li {
+  margin-bottom: 10px;
+}
+
+.modal-content .document-list li a {
+  display: block;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .document-list li a:hover {
+  background-color: #008fbf;
+}
+
+/* Add this CSS to your existing styles.css or in a separate file */
+.modal-content .group-members {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content .group-members li {
+  margin-bottom: 30px;
+}
+
+.modal-content .group-members li .member {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.modal-content .group-members li .member:hover {
+  transform: translateY(-5px);
+}
+
+.modal-content .group-members li .member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.modal-content .group-members li .member .info {
+  color: #fff;
+}
+
+.modal-content .group-members li .member strong {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.modal-content .group-members li .member p {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autonomous Robotics System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="university-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/he/a/a7/Bgu-logo.svg" alt="BGU Logo">
+    </div>
+    <nav>
+      <ul class="toolbar">
+        <li><a href="#" data-modal="promoModal"><i class="fas fa-video"></i> Promotional Video</a></li>
+        <li><a href="#" data-modal="documentsModal"><i class="fas fa-file-alt"></i> Documents</a></li>
+        <li><a href="https://github.com/michel1912/final.git" target="_blank"><i class="fab fa-github"></i> Git Repository</a></li>
+        <li><a href="#" data-modal="groupModal"><i class="fas fa-users"></i> Group Members</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content">
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <img src="https://img.freepik.com/premium-photo/friendly-white-robot-stands-against-white-background_14117-635670.jpg?size=626&ext=jpg&ga=GA1.1.1808391587.1720900647&semt=ais_user" alt="Robot Background">
+      </div>
+      <div class="hero-content">
+        <h1>Autonomous Robotics System</h1>
+        <p>AOS - ROS2</p>
+        <p></p>
+        <p>
+          <p>Our project focuses on developing an advanced robotic control system using ROS2, aimed at enhancing the functionality and autonomy of robots. By leveraging the power of the Autonomous Operating System (AOS) server, our system translates complex configuration files into executable Python code, enabling robots to perform tasks such as navigation and object manipulation seamlessly. With a modular design and the implementation of the visitor design pattern, our project ensures easy addition of new features and scalability. This transition from ROS1 to ROS2 brings improved performance, real-time capabilities, and enhanced security, making our system robust and adaptable for various robotic applications. We are excited about the potential impact of our project in advancing the field of robotics, providing a flexible, efficient, and scalable solution for autonomous robot control.</p>
+        </p>
+      </div>
+    </section>
+
+    <div id="promoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="video-container">
+          <video controls>
+            <source src="docs/demo_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+    
+    <div id="documentsModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Project Documents</h2>
+        <ul class="document-list">
+          <li><a href="docs/ADD.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Requirements Document</a></li>
+          <li><a href="docs/ARD.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Software Design Document</a></li>
+          <li><a href="docs/TestingDoc.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Testing Document</a></li>
+          <li><a href="docs/Instructions.pdf" target="_blank"><i class="fas fa-file-pdf"></i> User Guide</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="groupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Group Members</h2>
+        <ul class="group-members">
+          <li>
+            <div class="member">
+              <div class="member-info">
+                <!-- <img src="member1.jpg" alt="Natalie Ahmad"> -->
+                <div class="info">
+                  <strong>Natalie Ahmad</strong>
+                  <p>Software Engineering Student, 5th Year</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="member">
+              <div class="member-info">
+                <div class="info">
+                  <strong>Majd Atwan</strong>
+                  <p>Software Engineering Student, 5th Year</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="member">
+              <div class="member-info">
+                <div class="info">
+                  <strong>Michel Mosa</strong>
+                  <p>Software Engineering Student, 5th Year</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="member">
+              <div class="member-info">
+                <div class="info">
+                  <strong>Moamen Mawasi</strong>
+                  <p>Software Engineering Student, 6th Year</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
