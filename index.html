@@ -19,6 +19,7 @@
         <li><a href="#" data-modal="documentsModal"><i class="fas fa-file-alt"></i> Documents</a></li>
         <li><a href="https://github.com/michel1912/final.git" target="_blank"><i class="fab fa-github"></i> Git Repository</a></li>
         <li><a href="#" data-modal="groupModal"><i class="fas fa-users"></i> Group Members</a></li>
+        <li><a href="#" data-modal="qaModal"><i class="fas fa-question-circle"></i> Q&A</a></li>
       </ul>
     </nav>
   </header>
@@ -57,6 +58,7 @@
           <li><a href="docs/ARD.pdf" target="_blank"><i class="fas fa-file-pdf"></i> ARD</a></li>
           <li><a href="docs/Instructions.pdf" target="_blank"><i class="fas fa-file-pdf"></i> User Guide</a></li>
           <li><a href="docs/TestingDoc.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Testing Document</a></li>
+          <li><a href="docs/Maintenance_Guide.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Maintenance Manual</a></li>
         </ul>
       </div>
     </div>
@@ -112,6 +114,21 @@
         </ul>
       </div>
     </div>
+
+    <div id="qaModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="qa-container">
+          <h2>Q&A</h2>
+          <form id="qaForm" class="qa-form">
+            <input type="text" id="question" class="qa-input" placeholder="Ask your question here">
+            <button type="submit" class="qa-submit">Submit</button>
+          </form>
+          <ul id="qaList" class="qa-list"></ul>
+        </div>
+      </div>
+    </div>    
+    
   </div>
 
   <script src="script.js"></script>
