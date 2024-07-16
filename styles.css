@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 .hero {
   position: relative; 
-  height: 92.7vh;
+  height: 94vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,13 +189,13 @@ nav ul li a:hover {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
   color: #fff;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .video-container {
@@ -317,4 +317,108 @@ nav ul li a:hover {
   margin: 0;
 }
 
+/* Q&A Modal Styles */
+.qa-container {
+  text-align: center;
+  padding: 20px;
+  max-height: 80vh; /* Limit maximum height to viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
 
+.qa-form {
+  margin-bottom: 20px;
+}
+
+.qa-input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.qa-submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.qa-submit:hover {
+  background-color: #008fbf;
+}
+
+.qa-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.qa-item {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.qa-item:last-child {
+  margin-bottom: 0;
+}
+
+.qa-item .question {
+  margin-bottom: 10px;
+}
+
+.answers {
+  list-style-type: none;
+  padding: 0;
+}
+
+.answer-item {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-top: 8px;
+}
+
+.answer-item:first-child {
+  margin-top: 0;
+}
+
+.answer-form {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.answer-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.answer-submit {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.answer-submit:hover {
+  background-color: #008fbf;
+}
